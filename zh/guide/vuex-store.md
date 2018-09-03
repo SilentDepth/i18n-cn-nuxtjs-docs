@@ -19,7 +19,7 @@ Nuxt.js 支持两种使用 `store` 的方式，你可以择一使用：
 
 ### 普通方式
 
-使用普通方式的状态树，需要要添加 `store/index.js` 文件，并对外暴露一个 Vuex.Store 实例：
+使用普通方式的状态树，需要添加 `store/index.js` 文件，并对外暴露一个 Vuex.Store 实例：
 
 ```js
 import Vue from 'vue'
@@ -27,7 +27,8 @@ import Vuex from 'vuex'
 
 Vue.use(Vuex)
 
-const store = new Vuex.Store({
+const store = () => new Vuex.Store({
+
   state: {
     counter: 0
   },
@@ -58,9 +59,9 @@ export default store
 使用**状态树模块化**的方式，`store/index.js` 不需要返回 Vuex.Store 实例，而应该直接将 `state`、`mutations` 和 `actions` 暴露出来：
 
 ```js
-export const state = {
+export const state = () => ({
   counter: 0
-}
+})
 
 export const mutations = {
   increment (state) {
@@ -72,9 +73,9 @@ export const mutations = {
 其他的模块文件也需要采用类似的方式，如 `store/todos.js` 文件：
 
 ```js
-export const state = {
+export const state = () => ({
   list: []
-}
+})
 
 export const mutations = {
   add (state, text) {
