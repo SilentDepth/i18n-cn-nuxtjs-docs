@@ -1,6 +1,6 @@
 ---
 title: "API: The plugins Property"
-description: Use vue.js plugins with the plugins option of nuxt.js.
+description: Use vue.js plugins with the plugins option of Nuxt.js.
 ---
 
 # The plugins Property
@@ -11,16 +11,14 @@ description: Use vue.js plugins with the plugins option of nuxt.js.
 If the item is an object, the properties are:
 
   - src: `String` (path of the file)
-  - injectAs: `String` (default to `false`) *If defined, the exported object will be injected in the root application and the context.*
   - ssr: `Boolean` (default to `true`) *If false, the file will be included only on the client-side.*
-
 
 > The plugins property lets you add vue.js plugins easily to your main application.
 
 Example (`nuxt.config.js`):
 ```js
 module.exports = {
-  plugins: ['~plugins/vue-notifications']
+  plugins: ['~/plugins/vue-notifications']
 }
 ```
 
