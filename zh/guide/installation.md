@@ -15,7 +15,9 @@ description: Nuxt.js 十分简单易用。一个简单的项目只需将 `nuxt` 
 $ vue init nuxt-community/starter-template <project-name>
 ```
 
-> 如果 [vue-cli](https://github.com/vuejs/vue-cli) 没有安装, 需先通过 `npm install -g vue-cli` 来安装。
+> 如果 [vue-cli](https://github.com/vuejs/vue-cli) 没有安装, 需先通过 `npm install -g @vue/cli @vue/cli-init` 来安装。
+
+> 译者注：截至本文作成时，Nuxt 社区并没有一个广泛认可的 Vue CLI 插件出现，所以这部分内容依然使用的是 Vue CLI 2.x 时代准备的项目模板。但 Vue CLI 3.0 已放弃使用模板来初始化项目，因此需要安装 `@vue/cli-init` 模拟 `vue init` 命令。
 
 然后安装依赖包：
 
@@ -25,10 +27,11 @@ $ npm install
 ```
 
 接着通过以下命令启动项目：
+
 ```bash
 $ npm run dev
 ```
-应用现在运行在 http://localhost:3000
+应用现在运行在 http://localhost:3000。
 
 <p class="Alert">注意：Nuxt.js 会监听 `pages` 目录中的文件变更并自动重启， 当添加新页面时没有必要手工重启应用。</p>
 
@@ -43,11 +46,12 @@ $ mkdir <项目名>
 $ cd <项目名>
 ```
 
-*提示: 将 项目名 替换成为你想创建的实际项目名*
+<p class="Alert Alert--nuxt-green"><b>提示：</b>将 <code>&lt;项目名&gt;</code> 替换为实际的项目名称。</p>
 
 ### 新建 package.json 文件
 
 `package.json` 文件用来设定如何运行 `nuxt`：
+
 ```json
 {
   "name": "my-app",
@@ -56,11 +60,13 @@ $ cd <项目名>
   }
 }
 ```
-上面的配置使得我们可以通过运行 `npm run dev` 来运行 `nuxt`。
+
+`scripts` 部分使得我们可以通过运行 `npm run dev` 来启动 Nuxt.js。
 
 ### 安装 `nuxt`
 
-一旦 `package.json` 创建好， 可以通过以下npm命令将 `nuxt` 安装至项目中：
+一旦 `package.json` 创建好，便可以通过如下 npm 命令将 `nuxt` 安装至项目中：
+
 ```bash
 npm install --save nuxt
 ```
@@ -70,11 +76,13 @@ npm install --save nuxt
 Nuxt.js 会依据 `pages` 目录中的所有 `*.vue` 文件生成应用的路由配置。
 
 创建 `pages` 目录：
+
 ```bash
 $ mkdir pages
 ```
 
 创建我们的第一个页面 `pages/index.vue`：
+
 ```html
 <template>
   <h1>Hello world!</h1>
@@ -82,11 +90,13 @@ $ mkdir pages
 ```
 
 然后启动项目：
+
 ```bash
 $ npm run dev
 ```
-Bingo！现在我们的应用运行在 http://localhost:3000
 
-<p class="Alert">注意：Nuxt.js 会监听 `pages` 目录中的文件变更并自动重启， 当添加新页面时没有必要手工重启应用。</p>
+现在我们的应用运行在 http://localhost:3000。
 
-了解更多关于Nuxt.js应用的目录结构： [目录结构](/guide/directory-structure)。
+<p class="Alert">注意：Nuxt.js 会监听 `pages` 目录中的文件变更并自动重启，当添加新页面时没有必要手工重启应用。</p>
+
+了解更多关于 Nuxt.js 应用的目录结构：[目录结构](/guide/directory-structure)。
