@@ -58,7 +58,7 @@ Nuxt.js 集成了以下组件/框架，用于开发完整而强大的 Web 应用
 
 ![nuxt-schema](/nuxt-schema.png)
 
-## 服务端渲染（通用 SSR）
+## 服务端渲染 (SSR)
 
 你可以使用 Nuxt.js 作为你项目的 UI 渲染框架。
 

@@ -6,11 +6,12 @@
         "to": "", "name": "介 绍",
         "contents": [
           { "to": "#nuxt-js-是什么-", "name": "Nuxt.js 是什么？" },
-          { "to": "#nuxt-js-框架是如何运作的-", "name": "Nuxt.js 框架是如何运作的？" },
+          { "to": "#nuxt-js-是如何运作的-", "name": "Nuxt.js 是如何运作的？" },
           { "to": "#特性", "name": "特 性" },
           { "to": "#流程图", "name": "流程图" },
-          { "to": "#服务端渲染", "name": "服务端渲染" },
-          { "to": "#静态化", "name": "静态化" }
+          { "to": "#服务端渲染-ssr-", "name": "服务端渲染 (SSR)" },
+          { "to": "#单页面应用-spa-", "name": "单页面应用 (SPA)" },
+          { "to": "#静态化-预渲染-", "name": "静态化（预渲染）" }
         ]
       },
       { "to": "/contribution-guide", "name": "开源贡献指引" },
@@ -75,7 +76,17 @@
         "contents": [
           { "to": "#使用第三方模块", "name": "第三方模块" },
           { "to": "#使用-vue-插件", "name": "Vue 插件" },
+          { "to": "#inject-in-root-amp-context", "name": "Inject in $root & context" },
           { "to": "#只在浏览器里使用的插件", "name": "只在浏览器里使用的插件" }
+        ]
+      },
+      {
+        "to": "/modules", "name": "模 块",
+        "contents": [
+          { "to": "#介绍", "name": "介绍" },
+          { "to": "#编写一个简单的模块", "name": "编写一个简单的模块" },
+          { "to": "#异步模块", "name": "异步模块" },
+          { "to": "#常用代码", "name": "常用代码" }
         ]
       },
       {
