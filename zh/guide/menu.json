@@ -74,9 +74,9 @@
       {
         "to": "/plugins", "name": "插 件",
         "contents": [
-          { "to": "#使用第三方模块", "name": "第三方模块" },
-          { "to": "#使用-vue-插件", "name": "Vue 插件" },
-          { "to": "#inject-in-root-amp-context", "name": "Inject in $root & context" },
+          { "to": "#第三方模块", "name": "第三方模块" },
+          { "to": "#vue-插件", "name": "Vue 插件" },
+          { "to": "#注入到-root-和上下文", "name": "注入到 $root 和上下文" },
           { "to": "#只在浏览器里使用的插件", "name": "只在浏览器里使用的插件" }
         ]
       },
